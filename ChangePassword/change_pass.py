@@ -18,7 +18,7 @@ class EncodeAndDecode():
                 encode_string += i
                 continue
             ch = self.DIC[i] + key
-            if ch > 34:  # букв в алфавите 26 (у нас счет с нуля)
+            if ch > 34:
                 ch = ch - 36
             encode_string += self.get_key(self.DIC, ch)
         return encode_string
